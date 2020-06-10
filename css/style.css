@@ -1,6 +1,13 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
 body {
   background-color: #e5e5e5;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /*цвет заголовков 212121*/
@@ -9,14 +16,63 @@ body {
 /*белый цвет FFFFFF*/
 /* фон шапки FFFFFF */
 /*E5E5E5*/
+/* social link AFB1B8*/
+
+/* header */
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 .logo span {
   color: #000000;
 }
-ul {
+.list {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.list-tel,
+.list-email {
+  color: var(--primary-text-color);
+}
+
+.list-tel:hover,
+.list-email:hover,
+.list-tel:focus,
+.list-email:focus {
+  color: var(--accent-text-color);
+}
+
+/* hero*/
+
+.botton {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+.list .title {
+  color: var(--title-text-color);
+}
+
+/* commands */
+.social-link a {
+  color: #afb1b8;
 }

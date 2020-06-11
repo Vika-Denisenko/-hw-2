@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
+  --fon-footer: #2f303a;
 }
 
 body {
@@ -44,6 +45,10 @@ a {
   color: var(--accent-text-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
 .list-tel,
 .list-email {
   color: var(--primary-text-color);
@@ -75,4 +80,23 @@ a {
 /* commands */
 .social-link a {
   color: #afb1b8;
+}
+
+/* footer */
+.footer {
+  background-color: var(--fon-footer);
+  color: var(--primary-white-color);
+}
+.footer .link {
+  color: var(--primary-white-color);
+}
+.footer .logo {
+  color: var(--accent-text-color);
+}
+.footer-mail,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.developer {
+  color: rgba(255, 255, 255, 0.4);
 }

@@ -9,6 +9,9 @@
 body {
   background-color: #e5e5e5;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+
+  font-family: Roboto, sans-serif;
 }
 
 /*цвет заголовков 212121*/
@@ -23,6 +26,11 @@ body {
 
 .logo {
   color: var(--accent-text-color);
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
 }
 
 .logo span {
@@ -38,6 +46,10 @@ a {
 
 .site-nav .link {
   color: var(--title-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
@@ -52,6 +64,10 @@ a {
 .list-tel,
 .list-email {
   color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .list-tel:hover,
@@ -63,14 +79,48 @@ a {
 
 /* hero*/
 
+.hero-title {
+  letter-spacing: 0.06em;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  text-transform: uppercase;
+}
 .botton {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 /* section */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.advantages .title {
+  font-weight: ;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.item-social-link:hover,
+.item-social-link:focus {
+  color: var(--accent-text-color);
 }
 
 .list .title {
@@ -81,22 +131,89 @@ a {
 .social-link a {
   color: #afb1b8;
 }
+.comand .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.comand p {
+  font-size: 16px;
+  line-height: 1.19;
+}
 
 /* footer */
 .footer {
   background-color: var(--fon-footer);
   color: var(--primary-white-color);
 }
-.footer .link {
+.footer span {
   color: var(--primary-white-color);
 }
 .footer .logo {
-  color: var(--accent-text-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.addres {
+  font-size: 14px;
+  line-height: 1.71;
 }
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 .developer {
   color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+.footer > .botton {
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* portfolio */
+.botton-radio {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.botton-radio:hover,
+.botton-radio:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.discription {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  font-size: 18px;
+  line-height: 1.56;
 }

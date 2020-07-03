@@ -4,10 +4,21 @@
   --accent-text-color: #2196f3;
   --primary-white-color: #ffffff;
   --fon-footer: #2f303a;
+  --fon-comand: #f5f4fa;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 
@@ -22,22 +33,58 @@ body {
 /*E5E5E5*/
 /* social link AFB1B8*/
 
+/*Утилиты*/
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 /* header */
 
+.main-nav {
+  outline: 2px solid tomato;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .logo {
+  margin-left: 0px;
+
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
 }
 
 .logo span {
   color: #000000;
 }
-.list {
-  list-style: none;
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 a {
@@ -45,7 +92,12 @@ a {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
+
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
@@ -59,6 +111,15 @@ a {
 
 .site-nav .link.current {
   color: var(--accent-text-color);
+}
+
+.tel-mail {
+  display: flex;
+  margin-left: auto;
+}
+
+.tel-mail .item + .item {
+  margin-left: 30px;
 }
 
 .list-tel,
@@ -79,26 +140,45 @@ a {
 
 /* hero*/
 
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  outline: 1px solid tomato;
+  margin-top: 0;
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   text-transform: uppercase;
 }
 .botton {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
+  border-radius: 4px;
+  max-width: 200px;
+  padding: 10px 32px;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 }
 
 /* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -107,15 +187,30 @@ a {
   letter-spacing: 0.03em;
 }
 
+.section.advantages {
+  padding-bottom: 0px;
+}
+
 .advantages .title {
-  font-weight: ;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.list.advantages {
+  display: flex;
+  margin: 0px -15px;
+}
+.advantages .item {
+  width: 270px;
+  margin: 0px 15px;
 }
 
 .advantages p {
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .item-social-link:hover,
@@ -125,13 +220,34 @@ a {
 
 .list .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/*our-works*/
+
+.list.our-works {
+  display: flex;
+  margin: 0px -15px;
+}
+
+.our-works .item {
+  width: 370px;
+  margin: 0px 15px;
 }
 
 /* commands */
+.section.comand {
+  background-color: var(--fon-comand);
+}
 .social-link a {
   color: #afb1b8;
 }
 .comand .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -139,6 +255,44 @@ a {
 .comand p {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+.comand .list {
+  display: flex;
+  margin: 0px -15px;
+}
+
+.comand .item {
+  width: 270px;
+  margin: 0px 15px;
+  padding-bottom: 24px;
+}
+.item .list.social-link {
+  display: flex;
+  justify-content: center;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item .social-link {
+  padding: 12px;
+  margin: 0px;
+  display: flex;
+}
+
+.list .social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-item .social-link {
+  background-color: var(--accent-text-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
 }
 
 /* footer */

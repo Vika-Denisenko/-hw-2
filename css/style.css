@@ -330,42 +330,84 @@ a {
   color: var(--primary-white-color);
 }
 .footer .logo {
+  display: block;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
 }
 
+.container.footer {
+  display: flex;
+}
+.container.footer > .addres {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 .addres {
   font-size: 14px;
   line-height: 1.71;
+}
+.list.addres {
+  width: 231px;
 }
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer h3 {
+.plus .title {
   margin: 0px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.developer {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
+.plus {
+  margin-top: 72px;
+  margin-bottom: 100px;
+  margin-left: 69px;
+}
+.list-plus {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+.link-plus {
+  padding: 12px;
+  margin: 0px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
 }
 
-.footer > .botton {
+.link-plus + .link-plus {
+  margin-left: 10px;
+}
+
+.link-plus:hover,
+.link-plus:focus {
+  background-color: var(--accent-text-color);
+}
+
+.container.footer > .botton {
+  display: flex;
   letter-spacing: 0.06em;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 108px;
+  margin-bottom: 94px;
+  margin-left: auto;
 }
-
-.container.footer {
-  display: flex;
+.botton .botton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 10px;
 }
 
 /* portfolio */

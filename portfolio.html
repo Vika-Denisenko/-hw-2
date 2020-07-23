@@ -14,47 +14,59 @@
   <body>
     <!--Хедер-->
     <header class="page-header">
-      <nav>
+      <nav class="container main-nav">
         <a href="index.html" class="logo"> Web <span>Studio</span> </a>
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li class="item">
+            <a href="./index.html" class="link current">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
+        </ul>
+
+        <ul class="tel-mail list">
+          <li class="item">
+            <img src="./images/envelope(hover).svg" alt="" /><a
+              href="mailto:info@devstudio.com"
+              class="list-email"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <img src="./images/smartphone.svg" alt="" /><a
+              href="tel:+380961111111"
+              class="list-tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </nav>
-
-      <ul class="list">
-        <li>
-          <img src="./images/envelope(hover).svg" alt="" /><a
-            href="mailto:info@devstudio.com"
-            class="list-email"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <img src="./images/smartphone.svg" alt="" /><a
-            href="tel:+380961111111"
-            class="list-tel"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
     </header>
     <main>
-      <section class="portfolio">
-        <h1>Portfolio</h1>
+      <section class="portfolio container section">
+        <h1 class="title">Portfolio</h1>
 
-        <ul class="list">
-          <li><botton type="botton" class="botton-radio">Все</botton></li>
-          <li><botton type="botton" class="botton-radio">Веб-сайты</botton></li>
-          <li>
+        <ul class="list btn">
+          <li class="item-btn">
+            <botton type="botton" class="botton-radio">Все</botton>
+          </li>
+          <li class="item-btn">
+            <botton type="botton" class="botton-radio">Веб-сайты</botton>
+          </li>
+          <li class="item-btn">
             <botton type="botton" class="botton-radio">Приложения</botton>
           </li>
-          <li><botton type="botton" class="botton-radio">Дизайн</botton></li>
-          <li><botton type="botton" class="botton-radio">Маркетинг</botton></li>
+          <li class="item-btn">
+            <botton type="botton" class="botton-radio">Дизайн</botton>
+          </li>
+          <li class="item-btn">
+            <botton type="botton" class="botton-radio">Маркетинг</botton>
+          </li>
         </ul>
-        <ul class="list">
-          <li>
+        <ul class="list example">
+          <li class="item-example">
             <a href=""
               ><img src="./images/img1.jpg" alt="Веб-сайт Технокряк" />
               <h2 class="title">Технокряк</h2>
@@ -66,7 +78,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img
                 src="./images/img2.jpg"
@@ -81,7 +93,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img src="./images/img3.jpg" alt="Приложение для ресторана" />
               <h2 class="title">Ресторан Seafood</h2>
@@ -93,7 +105,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img src="./images/img4.jpg" alt="Маркетинг проекта Prime" />
               <h2 class="title">Проект Prime</h2>
@@ -105,7 +117,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img
                 src="./images/img5.jpg"
@@ -120,7 +132,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img
                 src="./images/img6.jpg"
@@ -135,7 +147,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img src="./images/img7.jpg" alt="Дизайн для издания" />
               <h2 class="title">Издание Limited Edition</h2>
@@ -147,7 +159,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img src="./images/img8.jpg" alt="Маркетинг для проекта LAB" />
               <h2 class="title">Проект LAB</h2>
@@ -159,7 +171,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="item-example">
             <a href=""
               ><img
                 src="./images/img9.jpg"
@@ -178,38 +190,48 @@
       </section>
     </main>
     <footer class="footer">
-      <div>
-        <a href="./" class="link logo">Web <span> Studio</span></a>
-        <address>
-          <ul class="list addres">
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="footer-mail">info@example.com</li>
-            <li class="footer-tel">+38 099 111 11 11</li>
-          </ul>
-        </address>
-      </div>
+      <div class="container footer">
+        <div class="addres">
+          <a href="./" class="link logo">Web <span> Studio</span></a>
+          <address>
+            <ul class="list addres">
+              <li>г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="footer-mail">info@example.com</li>
+              <li class="footer-tel">+38 099 111 11 11</li>
+            </ul>
+          </address>
+        </div>
 
-      <div>
-        <h3>присоединяйтесь</h3>
-        <ul class="list">
-          <li>
-            <a href=""><img src="./images/instagram.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/twitter.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/facebook.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/linkedin.svg" alt="" /></a>
-          </li>
-        </ul>
+        <div class="plus">
+          <h3 class="title">присоединяйтесь</h3>
+          <ul class="list-plus">
+            <li class="item-plus">
+              <a class="link-plus" href=""
+                ><img src="./images/instagram.svg" alt=""
+              /></a>
+            </li>
+            <li class="item-plus">
+              <a class="link-plus" href=""
+                ><img src="./images/twitter.svg" alt=""
+              /></a>
+            </li>
+            <li class="item-plus">
+              <a class="link-plus" href=""
+                ><img src="./images/facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="item-plus">
+              <a class="link-plus" href=""
+                ><img src="./images/linkedin.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="botton">
+          <a href="" class="botton">Подписаться </a>
+          <img src="./images/icon-send.svg" alt="" />
+        </div>
       </div>
-      <a href="" class="botton"
-        >Подписаться <img src="./images/icon-send.svg" alt=""
-      /></a>
-      <p class="developer">2020 &#448; Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
